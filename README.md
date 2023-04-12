@@ -49,6 +49,7 @@ Here are the steps in order:
             type: {{ .Values.service.type }}
             externalName: {{ include "microsvc.fullname" . }}.default.svc.cluster.local
           ```
+        * Update `targetPort` to match the port used throughout.
 6. Your microservice is now ready to deploy. Use helm install to deploy (command mentioned above).
 7. Test your microservice on kubernetes by shelling into another cluster. Then issue the following command:
 
