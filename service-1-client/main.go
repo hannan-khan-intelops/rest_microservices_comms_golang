@@ -19,7 +19,8 @@ func main() {
 		}
 		defer resp.Body.Close()
 		body, err := io.ReadAll(resp.Body)
-		log.Println(body)
+		strBody := string(body)
+		log.Println(strBody)
 		time.Sleep(5 * time.Second)
 	}
 }
