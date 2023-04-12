@@ -7,8 +7,8 @@ import (
 )
 
 func main() {
-	http.HandleFunc("/get", getEmployeeJson)
-	log.Println("API endpoint running at -> http://localhost:4317/get")
+	http.HandleFunc("/", getEmployeeJson)
+	log.Println("API endpoint running at -> http://localhost:4317/")
 	http.ListenAndServe(":4317", nil)
 }
 

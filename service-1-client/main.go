@@ -8,10 +8,10 @@ import (
 )
 
 func main() {
-	log.Println("Starting client...")
+	log.Println("Starting client...requesting from http://service-2-server.default.svc.cluster.local:4317")
 
 	for i := 0; i < 1; {
-		resp, err := http.Get("http://service-2-server.default.svc.cluster.local:4317/get")
+		resp, err := http.Get("http://service-2-server.default.svc.cluster.local:4317")
 		if err != nil {
 			log.Println(err)
 			log.Println("Sleep container indefinitely.")
