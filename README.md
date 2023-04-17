@@ -56,3 +56,9 @@ Here are the steps in order:
 ```shell
 curl microsvc.default.svc.cluster.local:4317/employee
 ```
+
+## Testing The External IP
+This service is available as an external IP. You can test it from your local machine by just doing:
+```shell
+curl http://ac185762-4cc1-41f6-8fac-09b8f1dd97d3.k8s.civo.com/service-2-server
+```
