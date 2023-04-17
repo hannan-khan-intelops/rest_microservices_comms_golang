@@ -62,3 +62,5 @@ This service is available as an external IP. You can test it from your local mac
 ```shell
 curl http://ac185762-4cc1-41f6-8fac-09b8f1dd97d3.k8s.civo.com/service-2-server
 ```
+**NOTE:** this address (the first `.com` part) is different for every cluster you want to run this service on. It needs to
+configured manually. Or at least until I find a way to do it automatically.
